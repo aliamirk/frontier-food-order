@@ -1,27 +1,32 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Wrapper from "../Wrapper/Wrapper";
+import CartButton from "./CartButton";
+
 
 const Navbar = () => {
   return (
-    <nav className="flex bg-slate-500 justify-between items-center h-16 mx-10">
+    <Wrapper>
+      <nav className="flex bg-slate-800 text-white px-4 justify-between items-center h-16 z-10 sticky">
 
-      <div className="flex gap-24 ">
-      {/* Logo */}
-        <div className="font-semibold tracking-widest">
+        <div className="flex gap-24 ">
+        {/* Logo */}
+          <div className="font-bold text-[18px] tracking-widest">
             Frontier
-        </div>
-        <ul className="flex gap-6">
+          </div>
+          <div className="flex-row hidden md:block md:gap-6 md:space-x-4">
           <Link href="/">Home</Link>
           <Link href="/About">About</Link>
-        </ul>
-      </div>
+          </div>
+        </div>
       
-      <div>
-        {/* Cart */}
-        <button className="w-32 h-10 rounded-full bg-slate-600">Cart: 0</button>
-      </div>
-    </nav>
+        <div>
+          {/* Cart */}
+          <CartButton className="rounded-full bg-slate-600"/>
+        </div>
+      </nav>
+    </Wrapper>
   );
 };
 
