@@ -7,6 +7,7 @@ import CartButton from "./CartButton";
 
 const Navbar = () => {
   return (
+    // MLLM
     <Wrapper>
       <nav className="flex bg-slate-800 text-white px-4 justify-between items-center h-16 z-10 sticky">
 
