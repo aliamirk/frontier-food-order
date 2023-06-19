@@ -11,7 +11,7 @@ const Hero = () => {
         alt="Cover Food Image"
         width={1000}
         height={100}
-        className="w-[100%] h-[60vh]  md:h-[70vh"
+        className="w-[100%] h-[40vh]  md:h-[60vh]"
       />
       <div className="flex justify-center">
         <FoodText />
